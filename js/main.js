@@ -21,7 +21,8 @@ async function fetchAndRenderMarkdown(filePath) {
     main.appendChild(topBar);
     const expandButton = initElement('button', 'expand-button fas fa-list');
     topBar.appendChild(expandButton);
-    const title = initElement('div', 'title', undefined, 'prayingForRain | 祈雨');
+    const title = initElement('a', 'title', undefined, 'prayingForRain | 祈雨');
+    title.href = '/';
     topBar.appendChild(title);
     const githubLink = initElement('a', 'github-link');
     githubLink.href = 'https://github.com/bacz00/prayingForRain';
