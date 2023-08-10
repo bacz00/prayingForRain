@@ -27,7 +27,7 @@ async function fetchAndRenderMarkdown(filePath) {
     const githubLink = initElement('a', 'github-link');
     githubLink.href = 'https://github.com/bacz00/prayingForRain';
     githubLink.target = '_blank';
-    githubLink.innerHTML = '<i class="fab fa-github"></i>&nbsp;在Github查看本项目';
+    githubLink.innerHTML = '<i class="fab fa-github"></i><span class="github-text">&nbsp;在Github查看本项目</span>';
     topBar.appendChild(githubLink);
 
     const overlay = initElement('div', 'overlay');
